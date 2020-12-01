@@ -37,7 +37,7 @@ const arrayNomi = [
 ];
 
 
-function arrayNuovoNomi(array, num1, num2){
+const arrayNuovoNomi = (array, num1, num2) => {
   let nuovoArray2 = [];
   for (let i = num2; i >= num1; i--) {
     // console.log(array[i]);
