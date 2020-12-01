@@ -17,7 +17,7 @@ var arrayCasuale = [
 function arrayAB(array, a, b) {
   var nuovoArray = [];
   for (var i = a; i <= b; i++) {
-    console.log(array[i]);
+    // console.log(array[i]);
     nuovoArray.push(array[i])
   }
   return nuovoArray
@@ -39,11 +39,21 @@ const arrayNomi = [
 
 function arrayNuovoNomi(array, num1, num2){
   let nuovoArray2 = [];
-  for (let i = num1; i <= num2; i++) {
-    console.log(array[i]);
+  for (let i = num2; i >= num1; i--) {
+    // console.log(array[i]);
     nuovoArray2 = [array[i], ...nuovoArray2];
   }
   return nuovoArray2
 }
-// reverse ?
-console.log(arrayNuovoNomi(arrayNomi, 1, 4));
+
+function arrayReverse(array, num1, num2){
+  let nuovoArray2 = [];
+  for (let i = num1; i <= num2; i++) {
+    nuovoArray2 = [array[i], ...nuovoArray2];
+  }
+  return nuovoArray2
+}
+
+console.log(arrayAB(arrayNomi, 1, 4));
+console.log("Array:",arrayNuovoNomi(arrayNomi, 1, 4));
+console.log("Reverse array: ", arrayReverse(arrayNomi, 1, 4));
