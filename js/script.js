@@ -17,7 +17,7 @@ var arrayCasuale = [
 function arrayAB(array, a, b) {
   var nuovoArray = [];
   for (var i = a; i <= b; i++) {
-    console.log([i]);
+    console.log(array[i]);
     nuovoArray.push(array[i])
   }
   return nuovoArray
