@@ -26,3 +26,24 @@ function arrayAB(array, a, b) {
 console.log(arrayAB(arrayCasuale, 2, 5));
 
 // vostre prove con le novità di ES6 viste stamattina.
+
+const arrayNomi = [
+  "paolo",
+  "marco",
+  "carlo",
+  "mario",
+  "michele",
+  "giuseppe"
+];
+
+
+function arrayNuovoNomi(array, num1, num2){
+  let nuovoArray2 = [];
+  for (let i = num1; i <= num2; i++) {
+    console.log(array[i]);
+    nuovoArray2 = [array[i], ...nuovoArray2];
+  }
+  return nuovoArray2
+}
+// reverse ?
+console.log(arrayNuovoNomi(arrayNomi, 1, 4));
